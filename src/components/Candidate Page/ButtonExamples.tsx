@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button, IconButton, AvatarButton, ButtonGroup } from './index'
 
 // Icons for examples
