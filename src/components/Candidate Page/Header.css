@@ -1,0 +1,7 @@
+a{
+    font-family: var(--font-family-sans);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--gray-900);
+    text-decoration: none;
+}

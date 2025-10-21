@@ -1,13 +1,20 @@
+import { useLocation } from 'react-router-dom'
+
 const Footer = () => {
+  const location = useLocation()
+  const isNonHome = location.pathname !== '/'
+  const bgClass = isNonHome ? 'bg-white' : 'bg-hero-green'
+  const logoSrc = isNonHome ? '/blue-logo.svg' : '/logo.svg'
+
   return (
-    <footer className="bg-hero-green py-16">
+    <footer className={`${bgClass} py-16`}>
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Side - Logo and Email Form */}
           <div>
             {/* Logo */}
             <div className="flex items-center mb-8">
-              <img src="/logo.svg" alt="Matchero" className="w-30 h-30" />
+              <img src={logoSrc} alt="Matchero" className="w-30 h-30" />
             </div>
 
             {/* Email Form */}

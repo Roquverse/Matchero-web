@@ -1,6 +1,11 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  const isNonHome = location.pathname !== '/';
+  const isHomeActive = location.pathname === '/';
+  const isCandidateActive = location.pathname.startsWith('/candidate');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -8,7 +13,9 @@ const Header = () => {
       <nav className="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 sm:px-6 lg:px-8 py-2">
         {/* Logo */}
         <div className="flex items-center justify-between">
-          <img src="/logo.svg" alt="Matchero Logo" className="w-50 h-50 object-contain"/>
+          <Link to="/">
+            <img src={isNonHome ? '/blue-logo.svg' : '/logo.svg'} alt="Matchero Logo" className="w-50 h-50 object-contain"/>
+          </Link>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -36,17 +43,17 @@ const Header = () => {
         {/* Navigation Menu */}
         <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:block overflow-hidden transition-all duration-300 basis-full grow`}>
           <div className="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
-            <a className="p-2 flex items-center text-sm text-blue-600 focus:outline-none focus:text-blue-600" href="#" aria-current="page">
+            <Link to="/" className={`p-2 flex items-center text-sm ${isHomeActive ? 'text-blue-600' : 'text-gray-800 hover:text-gray-500'} focus:outline-none`} aria-current="page">
               Matchero
-            </a>
+            </Link>
 
             <a className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500" href="#">
               For recruiters
             </a>
 
-            <a className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500" href="#">
+            <Link to="/candidate" className={`p-2 flex items-center text-sm ${isCandidateActive ? 'text-blue-600' : 'text-gray-800 hover:text-gray-500'} focus:outline-none`}>
               For jobseekers
-            </a>
+            </Link>
 
             <a className="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-none focus:text-gray-500" href="#">
               Product
