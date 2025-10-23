@@ -39,11 +39,11 @@ const ButtonExamples = () => {
   return (
     <div className="p-8 space-y-8 bg-gray-50 min-h-screen">
       <div>
-        <h2 className="text-2xl font-bold mb-4">Button Components</h2>
+        <h2 className="text-heading-3-bold mb-4">Button Components</h2>
         
         {/* Primary Buttons */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Primary Buttons</h3>
+          <h3 className="text-xl-2-semibold mb-3">Primary Buttons</h3>
           <div className="flex flex-wrap gap-3">
             <Button variant="primary">Request demo</Button>
             <Button variant="secondary">Request demo</Button>
@@ -53,7 +53,7 @@ const ButtonExamples = () => {
 
         {/* Button States */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Button States</h3>
+          <h3 className="text-xl-2-semibold mb-3">Button States</h3>
           <div className="flex flex-wrap gap-3">
             <Button variant="primary">Default</Button>
             <Button variant="primary">Hover</Button>
@@ -64,7 +64,7 @@ const ButtonExamples = () => {
 
         {/* Button Sizes */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Button Sizes</h3>
+          <h3 className="text-xl-2-semibold mb-3">Button Sizes</h3>
           <div className="flex flex-wrap items-center gap-3">
             <Button variant="primary" size="sm">Button-sm</Button>
             <Button variant="primary" size="md">Button</Button>
@@ -74,7 +74,7 @@ const ButtonExamples = () => {
 
         {/* Block Buttons */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Block Buttons</h3>
+          <h3 className="text-xl-2-semibold mb-3">Block Buttons</h3>
           <div className="max-w-md space-y-3">
             <Button variant="primary" block>Button</Button>
             <Button variant="secondary" block>Button</Button>
@@ -83,7 +83,7 @@ const ButtonExamples = () => {
 
         {/* Trailing Icon */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Trailing Icon</h3>
+          <h3 className="text-xl-2-semibold mb-3">Trailing Icon</h3>
           <div className="flex flex-wrap gap-3">
             <Button variant="primary" trailingIcon={<ChevronRight />}>Request demo</Button>
             <Button variant="secondary" trailingIcon={<ChevronRight />}>Request demo</Button>
@@ -92,7 +92,7 @@ const ButtonExamples = () => {
 
         {/* Trailing Divider */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Trailing Divider</h3>
+          <h3 className="text-xl-2-semibold mb-3">Trailing Divider</h3>
           <div className="flex flex-wrap gap-3">
             <Button variant="primary" trailingIcon={<Check />} trailingDivider={<Divider />}>Settings</Button>
             <Button variant="secondary" trailingIcon={<ChevronRight />} trailingDivider={<Divider />}>Settings</Button>
@@ -101,7 +101,7 @@ const ButtonExamples = () => {
 
         {/* Leading Icon */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Leading Icon</h3>
+          <h3 className="text-xl-2-semibold mb-3">Leading Icon</h3>
           <div className="flex flex-wrap gap-3">
             <Button variant="secondary" leadingIcon={<User />}>Follow</Button>
           </div>
@@ -109,7 +109,7 @@ const ButtonExamples = () => {
 
         {/* Avatar Button */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Avatar Button</h3>
+          <h3 className="text-xl-2-semibold mb-3">Avatar Button</h3>
           <div className="flex flex-wrap gap-3">
             <AvatarButton variant="secondary" avatar={<User />} trailingIcon={<ChevronRight />}>Action</AvatarButton>
           </div>
@@ -117,7 +117,7 @@ const ButtonExamples = () => {
 
         {/* Icon Buttons */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Icon Buttons</h3>
+          <h3 className="text-xl-2-semibold mb-3">Icon Buttons</h3>
           <div className="flex flex-wrap gap-3">
             <IconButton variant="primary" icon={<ThumbsUp />} aria-label="Like" />
             <IconButton variant="outline" icon={<ThumbsDown />} aria-label="Dislike" />
@@ -126,7 +126,7 @@ const ButtonExamples = () => {
 
         {/* Button Group */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold mb-3">Button Group</h3>
+          <h3 className="text-xl-2-semibold mb-3">Button Group</h3>
           <ButtonGroup spacing="md">
             <Button variant="primary">First</Button>
             <Button variant="secondary">Second</Button>

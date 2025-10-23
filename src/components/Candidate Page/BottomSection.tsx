@@ -24,7 +24,7 @@ const BottomSection = () => {
               src="/button-image.png" 
               alt="Placeholder Image" 
               className="object-cover"
-              style={{width: '100%' }}
+              style={{width: '100%', zIndex: 1, position: 'relative' }}
             />
           </div>
         </div>

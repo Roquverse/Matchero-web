@@ -5,10 +5,10 @@ const VideoSection = () => {
       
         {/* Header */}
         <div className="text-center mb-16 video-top-container">
-          <h2 className="mb-6 font-source-serif video-section-heading">
+          <h2 className="mb-6 font-source-serif video-header">
             Hiring reimagined
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto font-sans video-section-description">
+          <p className="text-xl-2-regular text-gray-700 max-w-4xl mx-auto video-section-description">
             See how Matchero transforms the recruitment journey from job posting to onboarding in a single platform.
           </p>
         </div>
@@ -29,11 +29,11 @@ const VideoSection = () => {
               
               {/* Play Button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <button className="bg-white rounded-xl px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-3 group">
+                <button className="bg-white rounded-xl px-8 py-4 shadow-lg video-section-button">
                   
-                  <span className="text-lg font-semibold text-gray-900">Watch 1 min video</span>
-                  <div className="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center group-hover:bg-green-800 transition-colors">
-                    <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <span className="video-section-button-text">Watch 1 min video</span>
+                  <div className="video-section-button-icon">
+                    <svg className="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </div>
@@ -49,6 +49,7 @@ const VideoSection = () => {
 };
 
 export default VideoSection;
+
 
 
 

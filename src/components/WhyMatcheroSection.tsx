@@ -23,7 +23,7 @@ const WhyMatcheroSection = () => {
   ];
 
   return (
-    <section className="bg-blue-50 py-20 relative overflow-hidden">
+    <section className="bg-blue-50 py-20 relative overflow-hidden why-matchero-section">
       {/* Background Map Overlay */}
       <div className="absolute inset-0 opacity-10">
         <div className="w-full h-full bg-gradient-to-br from-blue-100 to-green-100"></div>
@@ -32,7 +32,7 @@ const WhyMatcheroSection = () => {
       <div className="max-w-7xl mx-auto px-8 relative z-10">
         {/* Header */}
         <div className="mb-16">
-          <h2 className="text-5xl lg:text-6xl font-serif font-bold text-gray-900 mb-8 font-source-serif why-matchero-heading">
+          <h2 className="text-xl-2 why-matchero-heading">
             Why Matchero?
           </h2>
         </div>
@@ -46,9 +46,9 @@ const WhyMatcheroSection = () => {
                 <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
                   <img src="/check.svg" alt="" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3  why-content-heading">{feature.title}</h3>
-                  <p className="text-gray-700 leading-relaxed why-content-description">{feature.description}</p>
+                <div className="why-content-container">
+                  <h3 className="text-xl semibold why-content-heading">{feature.title}</h3>
+                  <p className="text-base semibold why-content-description">{feature.description}</p>
                 </div>
               </div>
             ))}
@@ -61,9 +61,9 @@ const WhyMatcheroSection = () => {
                 <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
                 <img src="/check.svg" alt="" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 why-content-heading">{feature.title}</h3>
-                  <p className="text-gray-700 leading-relaxed why-content-description">{feature.description}</p>
+                <div className="why-content-container">
+                  <h3 className="text-xl semibold why-content-heading">{feature.title}</h3>
+                  <p className="text-base semibold why-content-description">{feature.description}</p>
                 </div>
               </div>
             ))}
@@ -75,6 +75,7 @@ const WhyMatcheroSection = () => {
 };
 
 export default WhyMatcheroSection;
+
 
 
 

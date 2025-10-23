@@ -2,17 +2,16 @@ const HowItWorks = () => {
   return (
     <div className="how-it-works py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 items-center" style={{ marginTop: '-250px', gap: '250px' }}>
+        <div className="grid lg:grid-cols-2 items-center" style={{ marginTop: '-150px', gap: '100px' }}>
           
           {/* Left Column - Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-full rounded-2xl overflow-hidden" style={{ width: '595px', height: '595px' }}>
+              <div className="htw-image-container">
                 <img 
                   src="/image2.png" 
                   alt="How It Works" 
-                  className="w-full h-full object-cover"
-                  style={{ backgroundColor: '#f3f4f6', border: '2px solid #d1d5db' }}
+                  className="w-full h-full object-cover htw-image"
                 />
               </div>
             </div>
@@ -21,7 +20,7 @@ const HowItWorks = () => {
           {/* Right Column - Content */}
           <div className="space-y-8 htw-text">
             {/* Heading */}
-            <h2 className="text-heading-3 font-weight-semibold font-family-serif">
+            <h2 className="htw-heading">
               How It Works
             </h2>
 
@@ -29,30 +28,30 @@ const HowItWorks = () => {
             <div className="space-y-6">
               {/* Step 1 */}
               <div className="space-y-2">
-                <h3 className="text-xl-semibold font-weight-semibold font-family-sans">
+                <h3 className="htw-step-heading">
                   Sign up & set your criteria
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="htw-step-desc">
                   Tell us what you value—team culture, location, tech stack.
                 </p>
               </div>
 
               {/* Step 2 */}
               <div className="space-y-2">
-                <h3 className="text-xl-semibold font-semibold text-family-sans">
+                <h3 className="htw-step-heading">
                   Get matched & notified
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="htw-step-desc">
                   Our algorithm brings you roles you love.
                 </p>
               </div>
 
               {/* Step 3 */}
               <div className="space-y-2">
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="htw-step-heading">
                   Accept interview & onboard
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="htw-step-desc">
                   If you get the offer, we guide you into the next chapter.
                 </p>
               </div>

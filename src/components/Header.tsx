@@ -72,8 +72,8 @@ const Header = () => {
               </a>
               
               <a className="px-4 py-2 flex items-center text-sm text-white bg-green-800 hover:bg-green-900 rounded-lg focus:outline-none focus:bg-green-900" href="#">
-                <span className="mr-2">Log in</span>
-                <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <span className="mr-2 text-white">Log in</span>
+                <svg className="shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
                   <circle cx="12" cy="7" r="4"/>
                 </svg>

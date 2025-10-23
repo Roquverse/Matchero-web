@@ -29,7 +29,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="bg-hero-green py-10 pb-32 md:pb-10 relative features-section">
+    <section className="bg-green-20 py-10 pb-32 md:pb-10 relative features-section">
       {/* Blue vertical line */}
       <div className="absolute top-0 left-1/2 w-1 h-10 bg-green-700 divider-line"></div>
       

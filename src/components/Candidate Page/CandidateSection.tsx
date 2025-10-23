@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const CandidateSection = () => {
   return (
     <div className="candidate-sections">
@@ -102,16 +104,16 @@ const CandidateSection = () => {
       {/* Right Side Content - Dark Text Over Map */}
       <div className="relative z-10 flex items-center justify-end">
         <div className="max-w-2xl mr-8 lg:mr-16" style={{ marginTop: '180px' }}>
-          <h1 className="text-display-serif-2 font-regular text-gray-900 mb-6">
+          <h1 className="text-display-serif-2-regular text-gray-900 mb-6">
             Multi-Language Access
           </h1>
-          <h3 className="text-lg text-gray-700 font-regular leading-relaxed mb-4">
+          <h3 className="text-xl-2-regular text-gray-700 mb-4">
             Designed for global talent — English, French, and Spanish supported at launch.
           </h3>
           <p className="text-gray-700 font-regular leading-relaxed mb-8">
             Tell us what you value—team culture, location, tech stack.
           </p>
-          <button className="inline-flex items-center border-2 border-gray-900 text-gray-900 bg-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors">
+          <button className="inline-flex items-center border-2 border-gray-900 text-gray-900 bg-white px-8 py-4 rounded-lg text-base-semibold hover:bg-gray-900 hover:text-white transition-colors">
             Join free. Start matching.
           </button>
         </div>
@@ -121,7 +123,7 @@ const CandidateSection = () => {
         
         {/* Heading */}
         <div className="mb-12" style={{ zIndex: '9999' }}>
-          <h2 className="text-display-serif-2 font-regular text-gray-900">
+          <h2 className="text-display-serif-2-regular text-gray-900">
             Explore open roles
           </h2>
         </div>
@@ -247,12 +249,14 @@ const CandidateSection = () => {
 
         {/* View All Button */}
         <div className="text-center">
-          <button className="flex justify-start items-center border-2 border-gray-900 text-gray-900 bg-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors">
+          <Link 
+            to="/jobs"
+            className="inline-flex items-center border-2 border-gray-900 text-gray-900 bg-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-900 hover:text-white transition-colors"
+          >
             View all open roles →
-          </button>
+          </Link>
         </div>
-
-      </div>
+        </div>
     </div>
   );
 };
